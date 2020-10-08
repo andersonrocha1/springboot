@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Página Inicial</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+	
+	<style type="text/css">
+		form {
+		
+		  margin-left: 35%;
+		  margin-top: 12%;
+		
+		}
+		form input[type=submit]{
+			color: white;
+		}
+		
+		.col .row{
+			margin-right: 0rem;
+		}
+	</style>
+	
+</head>
+<body>
+		<form th:action="@{/login}" method="post" class="col s6">
+		
+			<h4>Acesso ao Sistema</h4>
+			<div class="row">
+				<div class="input-field col s6">
+					<label class="active" for="username" >Login</label> <input type="text"
+						name="username" class="validate" style="border-radius: 12px; border-bottom: none">
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<label class="active" for="password">Senha</label> <input
+						type="password" id="password" name="password" class="validate" style="border-radius: 12px; border-bottom: none">
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<input name="logar" id="logar" class="waves-effect waves-light btn"
+						type="submit" value="Logar">
+				</div>
+			</div>
+
+	</form>
+	
+		
+		
+	
+
+
+
+
+
+	<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
