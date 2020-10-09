@@ -27,6 +27,7 @@ public class SpringbootApplication implements WebMvcConfigurer {
 		String result = encoder.encode("123");
 		System.out.println(result);
 		*/
+		
 	}
 	
 	@Override
