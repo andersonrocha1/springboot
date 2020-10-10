@@ -32,7 +32,8 @@ public class WebConfigSecurity extends WebSecurityConfigurerAdapter {
 		.loginPage("/login")
 		.defaultSuccessUrl("/cadastropessoa")
 		.failureUrl("/login?error=true")
-		.and().logout().logoutSuccessUrl("/login") // Mapeia URL de logout e invalida
+		.and().logout()  // Mapeia URL de logout e invalida
+		.logoutSuccessUrl("/login")   //Página padrão ao fazer logout
 		.logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 		
 	}
